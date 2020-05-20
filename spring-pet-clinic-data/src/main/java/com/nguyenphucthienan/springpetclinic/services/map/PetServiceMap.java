@@ -1,11 +1,11 @@
 package com.nguyenphucthienan.springpetclinic.services.map;
 
 import com.nguyenphucthienan.springpetclinic.model.Pet;
-import com.nguyenphucthienan.springpetclinic.services.CrudService;
+import com.nguyenphucthienan.springpetclinic.services.PetService;
 import org.springframework.stereotype.Service;
 
 @Service
-public class PetServiceMap extends AbstractMapService<Pet, Long> implements CrudService<Pet, Long> {
+public class PetServiceMap extends AbstractMapService<Pet, Long> implements PetService {
 
     @Override
     public Pet save(Pet object) {
