@@ -1,4 +1,4 @@
-package com.nguyenphucthienan.springpetclinic.services;
+package com.nguyenphucthienan.springpetclinic.service;
 
 import com.nguyenphucthienan.springpetclinic.model.Speciality;
 

@@ -1,10 +1,10 @@
 package com.nguyenphucthienan.springpetclinic.bootstrap;
 
 import com.nguyenphucthienan.springpetclinic.model.*;
-import com.nguyenphucthienan.springpetclinic.services.OwnerService;
-import com.nguyenphucthienan.springpetclinic.services.PetTypeService;
-import com.nguyenphucthienan.springpetclinic.services.SpecialityService;
-import com.nguyenphucthienan.springpetclinic.services.VetService;
+import com.nguyenphucthienan.springpetclinic.service.OwnerService;
+import com.nguyenphucthienan.springpetclinic.service.PetTypeService;
+import com.nguyenphucthienan.springpetclinic.service.SpecialityService;
+import com.nguyenphucthienan.springpetclinic.service.VetService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;

@@ -1,10 +1,10 @@
-package com.nguyenphucthienan.springpetclinic.services.map;
+package com.nguyenphucthienan.springpetclinic.service.map;
 
 import com.nguyenphucthienan.springpetclinic.model.Owner;
 import com.nguyenphucthienan.springpetclinic.model.Pet;
-import com.nguyenphucthienan.springpetclinic.services.OwnerService;
-import com.nguyenphucthienan.springpetclinic.services.PetService;
-import com.nguyenphucthienan.springpetclinic.services.PetTypeService;
+import com.nguyenphucthienan.springpetclinic.service.OwnerService;
+import com.nguyenphucthienan.springpetclinic.service.PetService;
+import com.nguyenphucthienan.springpetclinic.service.PetTypeService;
 import org.springframework.stereotype.Service;
 
 @Service

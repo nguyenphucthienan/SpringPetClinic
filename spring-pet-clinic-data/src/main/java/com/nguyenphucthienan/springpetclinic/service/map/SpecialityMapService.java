@@ -1,7 +1,7 @@
-package com.nguyenphucthienan.springpetclinic.services.map;
+package com.nguyenphucthienan.springpetclinic.service.map;
 
 import com.nguyenphucthienan.springpetclinic.model.Speciality;
-import com.nguyenphucthienan.springpetclinic.services.SpecialityService;
+import com.nguyenphucthienan.springpetclinic.service.SpecialityService;
 import org.springframework.stereotype.Service;
 
 @Service

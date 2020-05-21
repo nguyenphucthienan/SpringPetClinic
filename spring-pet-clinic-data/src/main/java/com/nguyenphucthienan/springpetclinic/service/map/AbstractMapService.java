@@ -1,4 +1,4 @@
-package com.nguyenphucthienan.springpetclinic.services.map;
+package com.nguyenphucthienan.springpetclinic.service.map;
 
 import com.nguyenphucthienan.springpetclinic.model.BaseEntity;
 
