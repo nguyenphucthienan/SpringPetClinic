@@ -2,7 +2,10 @@ package com.nguyenphucthienan.springpetclinic.service.map;
 
 import com.nguyenphucthienan.springpetclinic.model.BaseEntity;
 
-import java.util.*;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
 
 public abstract class AbstractMapService<T extends BaseEntity, ID extends Long> {
 
@@ -12,7 +15,7 @@ public abstract class AbstractMapService<T extends BaseEntity, ID extends Long> 
         return new HashSet<T>(map.values());
     }
 
-    public T findById(Long id) {
+    public T findById(ID id) {
         return map.get(id);
     }
 
@@ -33,7 +36,7 @@ public abstract class AbstractMapService<T extends BaseEntity, ID extends Long> 
         map.entrySet().removeIf(entry -> entry.getValue().equals(object));
     }
 
-    public void deleteById(Long id) {
+    public void deleteById(ID id) {
         map.remove(id);
     }
 
