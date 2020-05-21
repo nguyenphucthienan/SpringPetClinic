@@ -1,10 +1,7 @@
 package com.nguyenphucthienan.springpetclinic.bootstrap;
 
 import com.nguyenphucthienan.springpetclinic.model.*;
-import com.nguyenphucthienan.springpetclinic.service.OwnerService;
-import com.nguyenphucthienan.springpetclinic.service.PetTypeService;
-import com.nguyenphucthienan.springpetclinic.service.SpecialityService;
-import com.nguyenphucthienan.springpetclinic.service.VetService;
+import com.nguyenphucthienan.springpetclinic.service.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
@@ -18,14 +15,16 @@ public class DataLoader implements CommandLineRunner {
     private final OwnerService ownerService;
     private final VetService vetService;
     private final SpecialityService specialityService;
+    private final VisitService visitService;
 
     @Autowired
     public DataLoader(PetTypeService petTypeService, OwnerService ownerService, VetService vetService,
-                      SpecialityService specialityService) {
+                      SpecialityService specialityService, VisitService visitService) {
         this.petTypeService = petTypeService;
         this.ownerService = ownerService;
         this.vetService = vetService;
         this.specialityService = specialityService;
+        this.visitService = visitService;
     }
 
     @Override
@@ -75,6 +74,13 @@ public class DataLoader implements CommandLineRunner {
 
         ownerService.save(owner);
         ownerService.save(owner2);
+
+        Visit catVisit = new Visit();
+        catVisit.setPet(fionasPet);
+        catVisit.setDate(LocalDate.now());
+        catVisit.setDescription("Sneezy Kitty");
+
+        visitService.save(catVisit);
 
         Speciality radiology = new Speciality();
         radiology.setDescription("Radiology");
