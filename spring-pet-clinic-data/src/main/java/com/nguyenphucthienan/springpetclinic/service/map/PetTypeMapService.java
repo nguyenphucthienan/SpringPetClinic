@@ -8,5 +8,4 @@ import org.springframework.stereotype.Service;
 @Service
 @Profile({"map", "default"})
 public class PetTypeMapService extends AbstractMapService<PetType, Long> implements PetTypeService {
-
 }
